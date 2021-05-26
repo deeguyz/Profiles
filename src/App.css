@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+ul{
+  display:block;
+}
+
+li{
+  list-style: none;
+  float: left;
+  clear: left;
+  margin-left: -2.5em;
+}
+
+div > .avatar {
+  width: 180px;
+  height: 180px;
+  border: 1px solid grey;
+  border-radius:50%;
+  margin-left: 2em;
+}
+
+hr{
+  margin-bottom:0;
+}
+
+.info{
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.container{
+  background-color: gray;
+  overflow: hidden;
+}
+
+body{
+  background-color: rgb(202, 202, 202);
+}
+
+.card{
+  background-color: white;
+  position: absolute;
+  width: 55%;
+  height: 85%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  overflow:auto;
+}
+
+.student{
+  background-color: white;
+}
+
+.search{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  width: 95%;
+  height: 5%;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+button {
+  margin-top: 0.5em;
+  float:right;
+  border:0;
+  background: transparent;
+  font-size: 2em;
+}
+
+
+button .plus:before{
+  content: "\002B";
+  color:rgb(202, 202, 202);
+}
+
+button .minus:after{
+  content: "\2212";
+  color:rgb(202, 202, 202);
+}
