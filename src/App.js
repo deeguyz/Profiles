@@ -15,7 +15,7 @@ function App() {
       const display = [];
       for(let i in dat.students){
         const avg = dat.students[i].grades.reduce((prev,cur) => (Number(prev) + Number(cur))) / dat.students[i].grades.length;
-        display.push({"id": dat.students[i].id,"pic": dat.students[i].pic, "name": dat.students[i].firstName + " " + dat.students[i].lastName, "email":"Email: " + dat.students[i].email, "company": "Company: " + dat.students[i].company, "skill": "Skill: " + dat.students[i].skill,"avg": "Average: " + avg.toFixed(2) +"%", "grades": dat.students[i].grades, "tags": []});
+        display.push({"id": dat.students[i].id,"pic": dat.students[i].pic, "name": dat.students[i].firstName + " " + dat.students[i].lastName, "email":"Email: " + dat.students[i].email, "company": "Company: " + dat.students[i].company, "skill": "Skill: " + dat.students[i].skill,"avg": "Average: " + avg.toFixed(2) +"%", "grades": dat.students[i].grades});
       }
       setSearchRes(display);
       setData(display);
@@ -35,7 +35,7 @@ function App() {
 
   let card = searchRes.map( info => {
     return(
-      <Collapse key={info.id} pic={info.pic} name={info.name} email={info.email} company={info.company} skill={info.skill} avg={info.avg} grades={info.grades} tags={info.tags}/>
+      <Collapse key={info.id} pic={info.pic} name={info.name} email={info.email} company={info.company} skill={info.skill} avg={info.avg} grades={info.grades}/>
     )
   })
 
